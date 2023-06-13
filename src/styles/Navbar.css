@@ -1,0 +1,233 @@
+body {
+    background-color: #4747d1;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    justify-content: center;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+}
+
+#panelA {
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+
+  margin-left: 5%;
+  position: fixed;
+}
+
+#panelB {
+  background: white;
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+  
+  position: fixed;
+  margin-left: 50%;
+
+}
+
+#panelC {
+  background: white;
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+
+  position: fixed;
+  margin-top: 25%;
+  margin-left: 5%;
+}
+
+#panelD {
+  background: white;
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+
+  position: fixed;
+  margin-top: 25%;
+  margin-left: 50%;
+}
+
+#orangeA {
+  width: 10%;
+  height: 12%;
+  
+  position: fixed;
+  margin-top: -0.5em;
+  margin-left: 30%;
+}
+
+#orangeB {
+  width: 10%;
+  height: 12%;
+  
+  position: fixed;
+  margin-top: -0.5em;
+  margin-left: 43.5%;
+}
+
+#orangeC {
+  width: 10%;
+  height: 12%;
+  
+  position: fixed;
+  margin-top: -0.5em;
+  margin-left: 57%;
+}
+
+#contact-info {
+  font-size: 35px;
+}
+
+#projects {
+  text-align: left;
+  margin-left: 125px;
+  font-size: 95px;
+  font-style: italic;
+
+  /* position: fixed; */
+  /* margin-top: -10%; */
+}
+
+#github {
+    margin-top: 10px;
+    margin-left: 1250px;
+    /* padding: 50px; */
+}
+
+#instagram {
+    margin-top: 10px;
+    margin-left: 1300px;
+}
+
+#linkedin {
+    margin-top: 10px;
+    margin-left: 1350px;
+}
+
+#layerA {
+    background-image: linear-gradient(
+  0deg,
+  #4747d1 1%,
+  hsl(261deg 58% 53%) 35%,
+  hsl(277deg 56% 50%) 46%,
+  hsl(291deg 59% 47%) 53%,
+  hsl(304deg 66% 46%) 58%,
+  hsl(313deg 76% 48%) 62%,
+  hsl(320deg 85% 49%) 65%,
+  hsl(325deg 92% 51%) 68%,
+  hsl(330deg 100% 55%) 69%,
+  hsl(336deg 100% 57%) 71%,
+  hsl(342deg 100% 60%) 72%,
+  hsl(350deg 100% 64%) 73%,
+  hsl(359deg 100% 67%) 74%,
+  hsl(9deg 100% 65%) 75%,
+  hsl(17deg 100% 62%) 76%,
+  hsl(24deg 100% 60%) 76%,
+  hsl(30deg 100% 57%) 77%,
+  hsl(36deg 100% 54%) 78%,
+  hsl(41deg 100% 50%) 79%,
+  hsl(45deg 100% 50%) 81%,
+  hsl(49deg 100% 48%) 84%,
+  #ebd700 94%
+);
+}
+
+#layerB {
+    background-image: linear-gradient(
+  180deg,
+  hsl(240deg 60% 55%) 1%,
+  hsl(217deg 100% 44%) 35%,
+  hsl(215deg 100% 47%) 46%,
+  hsl(214deg 100% 49%) 53%,
+  hsl(212deg 100% 50%) 58%,
+  hsl(210deg 100% 50%) 62%,
+  hsl(208deg 100% 50%) 65%,
+  hsl(206deg 100% 50%) 68%,
+  hsl(204deg 100% 50%) 69%,
+  hsl(202deg 100% 49%) 71%,
+  hsl(199deg 100% 48%) 72%,
+  hsl(196deg 100% 45%) 73%,
+  hsl(191deg 100% 43%) 74%,
+  hsl(186deg 100% 40%) 75%,
+  hsl(179deg 100% 37%) 76%,
+  hsl(172deg 100% 38%) 76%,
+  hsl(165deg 100% 39%) 77%,
+  hsl(158deg 100% 40%) 78%,
+  hsl(151deg 100% 40%) 79%,
+  hsl(145deg 100% 41%) 81%,
+  hsl(138deg 100% 42%) 84%,
+  #01d521 94%
+);
+}
+
+#layerC {
+    background-image: linear-gradient(
+  0deg,
+  hsl(27deg 100% 52%) 1%,
+  hsl(30deg 100% 49%) 35%,
+  hsl(32deg 100% 48%) 47%,
+  hsl(34deg 100% 47%) 54%,
+  hsl(36deg 100% 46%) 60%,
+  hsl(38deg 100% 45%) 64%,
+  hsl(41deg 100% 44%) 68%,
+  hsl(44deg 100% 42%) 71%,
+  hsl(47deg 100% 41%) 73%,
+  hsl(50deg 100% 39%) 75%,
+  hsl(54deg 100% 38%) 76%,
+  hsl(58deg 100% 36%) 78%,
+  hsl(62deg 100% 35%) 79%,
+  hsl(67deg 100% 36%) 80%,
+  hsl(71deg 100% 37%) 81%,
+  hsl(76deg 100% 38%) 81%,
+  hsl(80deg 100% 39%) 82%,
+  hsl(85deg 100% 39%) 83%,
+  hsl(90deg 100% 40%) 84%,
+  hsl(96deg 100% 41%) 86%,
+  hsl(104deg 97% 42%) 88%,
+  hsl(129deg 99% 42%) 95%
+);
+}
+
+#layerD {
+    background-image: linear-gradient(
+  180deg,
+  hsl(27deg 100% 52%) 1%,
+  hsl(26deg 100% 56%) 32%,
+  hsl(25deg 100% 59%) 41%,
+  hsl(25deg 100% 61%) 46%,
+  hsl(25deg 100% 64%) 49%,
+  hsl(25deg 100% 66%) 51%,
+  hsl(25deg 100% 68%) 52%,
+  hsl(25deg 100% 70%) 52%,
+  hsl(25deg 100% 72%) 53%,
+  hsl(25deg 100% 74%) 52%,
+  hsl(25deg 100% 76%) 52%,
+  hsl(25deg 100% 78%) 52%,
+  hsl(25deg 100% 81%) 51%,
+  hsl(25deg 100% 83%) 51%,
+  hsl(25deg 100% 85%) 51%,
+  hsl(25deg 100% 87%) 51%,
+  hsl(25deg 100% 89%) 52%,
+  hsl(26deg 100% 91%) 53%,
+  hsl(26deg 100% 93%) 55%,
+  hsl(26deg 100% 96%) 59%,
+  hsl(26deg 100% 98%) 65%,
+  hsl(0deg 0% 100%) 87%
+);
+}
