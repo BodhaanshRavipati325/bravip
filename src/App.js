@@ -51,7 +51,7 @@ export function App() {
 
         <ParallaxLayer sticky={{ start: 0.25, end: 0.3 }} speed={1}>
           <div className={styles.container}>
-            <Slider>SSHHHHH!!!</Slider>
+            <Slider>SSHHH!!</Slider>
           </div>
         </ParallaxLayer>
 

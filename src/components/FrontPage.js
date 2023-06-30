@@ -24,11 +24,6 @@ export default function FrontPage() {
       <ParallaxLayer sticky={{ start: 0.45, end: 0.45 }} speed={1}>
         <h2 id="job">Full Stack Developer</h2>
       </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 0.25, end: 0.3 }} speed={1}>
-        <div className={styles.container}>
-          <Slider>SSHHHHH!!!</Slider>
-        </div>
-      </ParallaxLayer>
     </>
   );
 }

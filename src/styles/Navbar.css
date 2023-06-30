@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 body {
     background-color: #4747d1;
 }
 
+#name {
+  position: relative;
+  padding-bottom: 1000px;
+}
+
+#job {
+  position: relative;
+  padding-top: 20px;
+}
+
 h1 {
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Nabla";
     font-size: 100px;
     font-weight: bold;
     color: white;
+    margin-bottom: 100px;
 }
 
 h2 {
