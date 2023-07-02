@@ -42,7 +42,7 @@ export function App() {
       <Parallax pages={1.5} ref={parallax}>
         <ParallaxLayer id="github" sticky={{ start: 0.005, end: 0.005 }}>
           <a href="https://github.com/BodhaanshRavipati325" target="_blank">
-            <img width="48px" height="48px" src={github}></img>
+            <img width="48px" height="48px" src={github} alt="github website"></img>
             <img
               id="signature"
               width="206px"
@@ -57,7 +57,7 @@ export function App() {
             href="https://www.instagram.com/bodhiishere/?hl=en"
             target="_blank"
           >
-            <img width="48px" height="48px" src={instagram}></img>
+            <img width="48px" height="48px" src={instagram} alt="instagram website"></img>
           </a>
         </ParallaxLayer>
 
@@ -66,7 +66,7 @@ export function App() {
             href="https://www.linkedin.com/in/bodhaansh-ravipati-16515419b/"
             target="_blank"
           >
-            <img width="48px" height="48px" src={linkedin}></img>
+            <img width="48px" height="48px" src={linkedin} alt="linkedin website"></img>
           </a>
         </ParallaxLayer>
         <FrontPage></FrontPage>

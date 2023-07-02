@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 
-import Tree from "react-animated-tree";
+import Tree from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/components/Tree/Tree.js";
 import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
 
 const treeStyles = {
