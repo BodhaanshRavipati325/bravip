@@ -71,10 +71,9 @@ export function App() {
         </ParallaxLayer>
         <FrontPage></FrontPage>
         <ParallaxLayer
-          onClick={() => {
-            parallax.current.scrollTo(isDown ? 0 : 0.3);
-            setIsDown(!isDown);
-          }}
+                  onClick={() => {
+                    parallax.current.scrollTo(0.3);
+                  }}
           id="layerB"
           speed={1}
           factor={0.5}
