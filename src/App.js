@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
 
@@ -28,7 +28,13 @@ const typeStyles = {
   verticalAlign: "middle",
 };
 
+function scrollTo(parallax, position) {
+  parallax.current.scrollTo(position);
+}
+
 export function App() {
+  const [isDown, setIsDown] = useState(false);
+
   const parallax = useRef(null);
 
   return (
@@ -65,7 +71,10 @@ export function App() {
         </ParallaxLayer>
         <FrontPage></FrontPage>
         <ParallaxLayer
-          onClick={() => parallax.current.scrollTo(0.3)}
+          onClick={() => {
+            parallax.current.scrollTo(isDown ? 0 : 0.3);
+            setIsDown(!isDown);
+          }}
           id="layerB"
           speed={1}
           factor={0.5}
