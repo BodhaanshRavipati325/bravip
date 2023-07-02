@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
 
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import github from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/github.png";
 import signature from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/header.png";
@@ -10,39 +10,26 @@ import instagram from "/Users/bodhaanshravipati/Documents/create-react-app/my-ap
 import linkedin from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/linkedin.png";
 
 import FrontPage from "./components/FrontPage";
-
-import Tree from "react-animated-tree";
-
-const treeStyles = {
-  position: "absolute",
-  // top: 1,
-  left: "42%",
-  color: "white",
-  fill: "white",
-  width: "100%",
-  fontSize: "40px",
-};
-
-const typeStyles = {
-  fontSize: "2em",
-  verticalAlign: "middle",
-};
-
-function scrollTo(parallax, position) {
-  parallax.current.scrollTo(position);
-}
+import TreeMenu from "./components/TreeMenu";
 
 export function App() {
-  const [isDown, setIsDown] = useState(false);
-
   const parallax = useRef(null);
+
+  function scrollTo() {
+    parallax.current.scrollTo(0.3);
+  }
 
   return (
     <>
       <Parallax pages={1.5} ref={parallax}>
         <ParallaxLayer id="github" sticky={{ start: 0.005, end: 0.005 }}>
           <a href="https://github.com/BodhaanshRavipati325" target="_blank">
-            <img width="48px" height="48px" src={github} alt="github website"></img>
+            <img
+              width="48px"
+              height="48px"
+              src={github}
+              alt="github website"
+            ></img>
             <img
               id="signature"
               width="206px"
@@ -57,7 +44,12 @@ export function App() {
             href="https://www.instagram.com/bodhiishere/?hl=en"
             target="_blank"
           >
-            <img width="48px" height="48px" src={instagram} alt="instagram website"></img>
+            <img
+              width="48px"
+              height="48px"
+              src={instagram}
+              alt="instagram website"
+            ></img>
           </a>
         </ParallaxLayer>
 
@@ -66,43 +58,18 @@ export function App() {
             href="https://www.linkedin.com/in/bodhaansh-ravipati-16515419b/"
             target="_blank"
           >
-            <img width="48px" height="48px" src={linkedin} alt="linkedin website"></img>
+            <img
+              width="48px"
+              height="48px"
+              src={linkedin}
+              alt="linkedin website"
+            ></img>
           </a>
         </ParallaxLayer>
+
         <FrontPage></FrontPage>
-        <ParallaxLayer
-                  onClick={() => {
-                    parallax.current.scrollTo(0.3);
-                  }}
-          id="layerB"
-          speed={1}
-          factor={0.5}
-          style={{
-            backgroundSize: "cover",
-          }}
-        >
-          <Tree content="🌊🌊🌊🌊" style={treeStyles}>
-            <Tree
-              content="Test"
-              type={<span style={typeStyles}>🙀</span>}
-            />
-            <Tree content="Projects">
-              <Tree content="hello" />
-              <Tree content="sub-subtree with children">
-                <Tree
-                  id="section2"
-                  content="child 1"
-                  style={{ color: "#63b1de" }}
-                />
-                <Tree content="child 2" style={{ color: "#63b1de" }} />
-                <Tree content="child 3" style={{ color: "#63b1de" }} />
-              </Tree>
-              <Tree content="hello" />
-            </Tree>
-            <Tree content="hello"/>
-            <Tree content="hello"/>
-          </Tree>
-        </ParallaxLayer>
+
+        <TreeMenu scrollTo={scrollTo} />
       </Parallax>
     </>
   );
