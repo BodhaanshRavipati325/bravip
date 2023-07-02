@@ -117,15 +117,22 @@ h2 {
   /* margin-top: -10%; */
 }
 
+#signature {
+  position: fixed;
+
+  margin-top: 10px;
+  margin-left: -1220px;
+}
+
 #github {
+    position: absolute;
     margin-top: 10px;
-    margin-left: 1250px;
-    /* padding: 50px; */
+    margin-left: 1220px;
 }
 
 #instagram {
     margin-top: 10px;
-    margin-left: 1300px;
+    margin-left: 1285px;
 }
 
 #linkedin {
