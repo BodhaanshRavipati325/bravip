@@ -16,7 +16,7 @@ export default function FrontPage() {
       <ParallaxLayer
           id="layerA"
           speed={4}
-          // factor={1.5}
+          factor={1}
           style={{
             backgroundSize: "cover",
           }}

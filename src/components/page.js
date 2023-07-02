@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useState, useEffect } from "react";
 import { useSpring, a } from "@react-spring/web";
 import useMeasure from "react-use-measure";

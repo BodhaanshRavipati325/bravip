@@ -1,26 +1,39 @@
-import * as React from "react";
+import React, { useRef } from "react";
 
 import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
 
-import Projects from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/components/Projects.js";
-
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 
 import github from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/github.png";
+import signature from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/header.png";
 import instagram from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/instagram.png";
 import linkedin from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/linkedin.png";
-import signature from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/header.png";
 
 import FrontPage from "./components/FrontPage";
 
-function scrollDown() {
-  window.scroll({ top: 1, left: 0, behavior: "smooth" });
-}
+import Tree from "react-animated-tree";
+
+const treeStyles = {
+  position: "absolute",
+  // top: 1,
+  left: "42%",
+  color: "white",
+  fill: "white",
+  width: "100%",
+  fontSize: "40px",
+};
+
+const typeStyles = {
+  fontSize: "2em",
+  verticalAlign: "middle",
+};
 
 export function App() {
+  const parallax = useRef(null);
+
   return (
     <>
-      <Parallax pages={2}>
+      <Parallax pages={1.5} ref={parallax}>
         <ParallaxLayer id="github" sticky={{ start: 0.005, end: 0.005 }}>
           <a href="https://github.com/BodhaanshRavipati325" target="_blank">
             <img width="48px" height="48px" src={github}></img>
@@ -51,7 +64,37 @@ export function App() {
           </a>
         </ParallaxLayer>
         <FrontPage></FrontPage>
-        <Projects></Projects>
+        <ParallaxLayer
+          onClick={() => parallax.current.scrollTo(0.3)}
+          id="layerB"
+          speed={1}
+          factor={0.5}
+          style={{
+            backgroundSize: "cover",
+          }}
+        >
+          <Tree content="🌊🌊🌊🌊" style={treeStyles}>
+            <Tree
+              content="Test"
+              type={<span style={typeStyles}>🙀</span>}
+            />
+            <Tree content="Projects">
+              <Tree content="hello" />
+              <Tree content="sub-subtree with children">
+                <Tree
+                  id="section2"
+                  content="child 1"
+                  style={{ color: "#63b1de" }}
+                />
+                <Tree content="child 2" style={{ color: "#63b1de" }} />
+                <Tree content="child 3" style={{ color: "#63b1de" }} />
+              </Tree>
+              <Tree content="hello" />
+            </Tree>
+            <Tree content="hello"/>
+            <Tree content="hello"/>
+          </Tree>
+        </ParallaxLayer>
       </Parallax>
     </>
   );
