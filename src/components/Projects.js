@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
+    <>
     <ParallaxLayer
           id="layerB"
           factor={1.5}
@@ -64,5 +65,6 @@ export default function Projects() {
           />
 
         </ParallaxLayer>
+        </>
   )
 }
