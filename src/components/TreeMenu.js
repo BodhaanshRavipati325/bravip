@@ -5,6 +5,7 @@ import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Na
 import { ParallaxLayer } from "@react-spring/parallax";
 
 import Tree from "react-animated-tree";
+
 const treeStyles = {
   position: "absolute",
   // top: 1,
@@ -34,22 +35,15 @@ const TreeMenu = ({ scrollTo }) => {
       }}
     >
       <Tree content="🌊🌊🌊🌊" style={treeStyles}>
-        <Tree content="Test" type={<span style={typeStyles}>🙀</span>} />
-        <Tree content="Projects">
-          <Tree content="hello" />
-          <Tree content="sub-subtree with children">
-            <Tree
-              id="section2"
-              content="child 1"
-              style={{ color: "#63b1de" }}
-            />
-            <Tree content="child 2" style={{ color: "#63b1de" }} />
-            <Tree content="child 3" style={{ color: "#63b1de" }} />
-          </Tree>
-          <Tree content="hello" />
+        <Tree content="Check out my work!" />
+        <Tree content="Projects" open={false}>
+          <Tree content="child 1" />
+          <Tree content="child 2" />
         </Tree>
-        <Tree content="hello" />
-        <Tree content="hello" />
+        <Tree content="Experience" open={false}>
+          <Tree content="child 1" />
+          <Tree content="child 2" />
+        </Tree>
       </Tree>
     </ParallaxLayer>
   );

@@ -38,7 +38,6 @@ export function App() {
             ></img>
           </a>
         </ParallaxLayer>
-
         <ParallaxLayer id="instagram" sticky={{ start: 0.005, end: 0.005 }}>
           <a
             href="https://www.instagram.com/bodhiishere/?hl=en"
@@ -52,7 +51,6 @@ export function App() {
             ></img>
           </a>
         </ParallaxLayer>
-
         <ParallaxLayer id="linkedin" sticky={{ start: 0.005, end: 0.005 }}>
           <a
             href="https://www.linkedin.com/in/bodhaansh-ravipati-16515419b/"

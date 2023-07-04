@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Nabla:EDPT,EHLT@100,12;129,12;156,12;200,24&display=swap");
 
 body {
   background-color: #4747d1;
@@ -280,6 +281,6 @@ br {
   cursor: pointer;
 }
 .treeview > .toggle:hover {
-  color: #63b1de;
-  fill: #63b1de;
+  color: hsl(359deg 100% 67%);
+  fill: hsl(359deg 100% 67%);
 }
