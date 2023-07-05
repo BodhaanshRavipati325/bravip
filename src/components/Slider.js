@@ -32,7 +32,7 @@ const Slider = ({ children }) => {
 
   const avSize = x.to({
     map: Math.abs,
-    range: [50, 300],
+    range: [50, Infinity],
     output: [0.5, 1],
     extrapolate: "clamp",
   });
