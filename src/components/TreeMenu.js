@@ -6,21 +6,6 @@ import { ParallaxLayer } from "@react-spring/parallax";
 
 import Tree from "react-animated-tree";
 
-const treeStyles = {
-  position: "absolute",
-  // top: 1,
-  left: "42%",
-  color: "white",
-  fill: "white",
-  width: "100%",
-  fontSize: "40px",
-};
-
-const typeStyles = {
-  fontSize: "2em",
-  verticalAlign: "middle",
-};
-
 const TreeMenu = ({ scrollTo }) => {
   return (
     <ParallaxLayer
@@ -32,9 +17,17 @@ const TreeMenu = ({ scrollTo }) => {
       factor={0.5}
       style={{
         backgroundSize: "cover",
+        position: "fixed",
+        // top: 1,
+        marginLeft: "42vw",
+        marginTop: "85vh",
+        color: "white",
+        fill: "white",
+        width: "100%",
+        fontSize: "2.8vw",
       }}
     >
-      <Tree content="🌊🌊🌊🌊" style={treeStyles}>
+      <Tree content="🌊🌊🌊🌊">
         <Tree content="Check out my work!" />
         <Tree content="Projects" open={false}>
           <Tree content="child 1" />

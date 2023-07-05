@@ -7,29 +7,31 @@ body {
 
 #name {
   position: relative;
-  padding-bottom: 1000px;
+  padding-bottom: 150vh;
 }
 
 #job {
   position: relative;
-  padding-top: 20px;
-}
+  padding-top: 3vh;
 
-#trigger {
-  width: 10px;
-  height: 10px;
+  position: fixed;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 
-  background-color: #ffffff;
+  margin-top: -216vh;
+  margin-left: 32.2vw;
 }
 
 h1 {
   /* justify-content: center; */
   text-align: center;
   font-family: "Nabla";
-  font-size: 100px;
+  font-size: 7vw;
   font-weight: bold;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 15vh;
 }
 
 h2 {
@@ -37,116 +39,77 @@ h2 {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 50px;
+  font-size: 3.5vw;
   font-style: italic;
   color: white;
 }
 
-#panelA {
-  background: rgb(255, 255, 255);
-  border-radius: 30px;
-  width: 600px;
-  height: 300px;
-
-  margin-left: 5%;
-  position: relative;
-  margin-top: 700px;
-}
-
-#panelB {
-  background: white;
-  border-radius: 30px;
-  width: 600px;
-  height: 300px;
-
-  position: fixed;
-  margin-left: 50%;
-}
-
-#panelC {
-  background: white;
-  border-radius: 30px;
-  width: 600px;
-  height: 300px;
-
-  position: fixed;
-  margin-top: 25%;
-  margin-left: 5%;
-}
-
-#panelD {
-  background: white;
-  border-radius: 30px;
-  width: 600px;
-  height: 300px;
-
-  position: fixed;
-  margin-top: 25%;
-  margin-left: 50%;
-}
-
-#orangeA {
-  width: 10%;
-  height: 12%;
-
-  position: fixed;
-  margin-top: -0.5em;
-  margin-left: 30%;
-}
-
-#orangeB {
-  width: 10%;
-  height: 12%;
-
-  position: fixed;
-  margin-top: -0.5em;
-  margin-left: 43.5%;
-}
-
-#orangeC {
-  width: 10%;
-  height: 12%;
-
-  position: fixed;
-  margin-top: -0.5em;
-  margin-left: 57%;
-}
-
 #contact-info {
-  font-size: 35px;
+  font-size: 2.5vw
 }
 
 #projects {
   text-align: left;
-  margin-left: 125px;
-  font-size: 95px;
+  margin-left: 8.75vw;
+  font-size: 6.65vw;
   font-style: italic;
 
   /* position: fixed; */
   /* margin-top: -10%; */
 }
 
-#signature {
-  position: fixed;
-
-  margin-top: 10px;
-  margin-left: -1220px;
+@media only screen and (max-width: 600px) {
+  #signature {
+    position: fixed;
+  
+    margin-top: 1.5vh;
+    margin-left: -85vw;
+  }
+  
+  #github {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 83vw;
+  }
+  
+  #instagram {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 88vw;
+  }
+  
+  #linkedin {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 93vw;
+  }
 }
 
-#github {
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 1220px;
-}
-
-#instagram {
-  margin-top: 10px;
-  margin-left: 1285px;
-}
-
-#linkedin {
-  margin-top: 10px;
-  margin-left: 1350px;
+@media only screen and (min-width: 600px) {
+  #signature {
+    position: fixed;
+  
+    margin-top: 1.5vh;
+    margin-left: -85vw;
+  }
+  
+  #github {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 83vw;
+  }
+  
+  #instagram {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 88vw;
+  }
+  
+  #linkedin {
+    position: fixed;
+    margin-top: 1.5vh;
+    margin-left: 93vw;
+  }
 }
 
 #layerA {
@@ -208,62 +171,6 @@ h2 {
   position: fixed;
 
   /* margin-right: 50%; */
-}
-
-#layerC {
-  background-image: linear-gradient(
-    0deg,
-    hsl(27deg 100% 52%) 1%,
-    hsl(30deg 100% 49%) 35%,
-    hsl(32deg 100% 48%) 47%,
-    hsl(34deg 100% 47%) 54%,
-    hsl(36deg 100% 46%) 60%,
-    hsl(38deg 100% 45%) 64%,
-    hsl(41deg 100% 44%) 68%,
-    hsl(44deg 100% 42%) 71%,
-    hsl(47deg 100% 41%) 73%,
-    hsl(50deg 100% 39%) 75%,
-    hsl(54deg 100% 38%) 76%,
-    hsl(58deg 100% 36%) 78%,
-    hsl(62deg 100% 35%) 79%,
-    hsl(67deg 100% 36%) 80%,
-    hsl(71deg 100% 37%) 81%,
-    hsl(76deg 100% 38%) 81%,
-    hsl(80deg 100% 39%) 82%,
-    hsl(85deg 100% 39%) 83%,
-    hsl(90deg 100% 40%) 84%,
-    hsl(96deg 100% 41%) 86%,
-    hsl(104deg 97% 42%) 88%,
-    hsl(129deg 99% 42%) 95%
-  );
-}
-
-#layerD {
-  background-image: linear-gradient(
-    180deg,
-    hsl(27deg 100% 52%) 1%,
-    hsl(26deg 100% 56%) 32%,
-    hsl(25deg 100% 59%) 41%,
-    hsl(25deg 100% 61%) 46%,
-    hsl(25deg 100% 64%) 49%,
-    hsl(25deg 100% 66%) 51%,
-    hsl(25deg 100% 68%) 52%,
-    hsl(25deg 100% 70%) 52%,
-    hsl(25deg 100% 72%) 53%,
-    hsl(25deg 100% 74%) 52%,
-    hsl(25deg 100% 76%) 52%,
-    hsl(25deg 100% 78%) 52%,
-    hsl(25deg 100% 81%) 51%,
-    hsl(25deg 100% 83%) 51%,
-    hsl(25deg 100% 85%) 51%,
-    hsl(25deg 100% 87%) 51%,
-    hsl(25deg 100% 89%) 52%,
-    hsl(26deg 100% 91%) 53%,
-    hsl(26deg 100% 93%) 55%,
-    hsl(26deg 100% 96%) 59%,
-    hsl(26deg 100% 98%) 65%,
-    hsl(0deg 0% 100%) 87%
-  );
 }
 
 br {

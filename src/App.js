@@ -10,7 +10,7 @@ import instagram from "/Users/bodhaanshravipati/Documents/create-react-app/my-ap
 import linkedin from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/linkedin.png";
 
 import FrontPage from "./components/FrontPage";
-import TreeMenu from "./components/TreeMenu";
+import TreeMenu from "./components/TreeMenu.js";
 
 export function App() {
   const parallax = useRef(null);
@@ -25,15 +25,15 @@ export function App() {
         <ParallaxLayer id="github" sticky={{ start: 0.005, end: 0.005 }}>
           <a href="https://github.com/BodhaanshRavipati325" target="_blank">
             <img
-              width="48px"
-              height="48px"
+              width="3.5%"
+              height="auto"
               src={github}
               alt="github website"
             ></img>
             <img
               id="signature"
-              width="206px"
-              height="96px"
+              width="15%"
+              height="auto"
               src={signature}
             ></img>
           </a>
@@ -44,8 +44,8 @@ export function App() {
             target="_blank"
           >
             <img
-              width="48px"
-              height="48px"
+              width="3.5%"
+              height="auto"
               src={instagram}
               alt="instagram website"
             ></img>
@@ -57,8 +57,8 @@ export function App() {
             target="_blank"
           >
             <img
-              width="48px"
-              height="48px"
+              width="3.5%"
+              height="auto"
               src={linkedin}
               alt="linkedin website"
             ></img>
