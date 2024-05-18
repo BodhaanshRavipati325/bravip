@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 
-import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
+import ".//styles/Navbar.css";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import github from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/images/github.png";
-import signature from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/images/header.png";
-import instagram from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/images/instagram.png";
-import linkedin from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/images/linkedin.png";
+import github from ".//images/github.png";
+import signature from ".//images/header.png";
+import instagram from ".//images/instagram.png";
+import linkedin from ".//images/linkedin.png";
 
 import FrontPage from "./components/FrontPage";
 import TreeMenu from "./components/TreeMenu.js";

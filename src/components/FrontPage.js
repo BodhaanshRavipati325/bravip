@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
+import "../styles/Navbar.css";
 
-import Slider from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/components/Slider.js";
+import Slider from "../components/Slider.js";
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import { TypeAnimation } from "react-type-animation";
 
-import styles from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/styles.module.css";
+import styles from "../styles/styles.module.css";
 
 export default function FrontPage() {
   return (

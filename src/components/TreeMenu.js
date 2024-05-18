@@ -1,6 +1,6 @@
 import React from "react";
 
-import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
+import "../styles/Navbar.css";
 
 import { ParallaxLayer } from "@react-spring/parallax";
 
