@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
+import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
 
-import Slider from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/components/Slider.js";
+import Slider from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/components/Slider.js";
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import { TypeAnimation } from "react-type-animation";
 
-import styles from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/styles.module.css";
+import styles from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/styles.module.css";
 
 export default function FrontPage() {
   return (
@@ -36,6 +36,8 @@ export default function FrontPage() {
           <h2 id="job">Full Stack Developer</h2>
           <div className={styles.container}>
             <Slider>SSHHH!!</Slider>
+            <p id="point-right">-{">"}</p>
+            <p id="point-left">{"<"}-</p>
           </div>
         </ParallaxLayer>
       </ParallaxLayer>

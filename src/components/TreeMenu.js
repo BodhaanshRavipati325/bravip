@@ -1,6 +1,6 @@
 import React from "react";
 
-import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
+import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
 
 import { ParallaxLayer } from "@react-spring/parallax";
 
@@ -29,13 +29,20 @@ const TreeMenu = ({ scrollTo }) => {
     >
       <Tree content="🌊🌊🌊🌊">
         <Tree content="Check out my work!" />
-        <Tree content="Projects" open={false}>
-          <Tree content="child 1" />
-          <Tree content="child 2" />
+        <Tree content="Projects" open={true}>
+          <a href="">
+          <Tree content="Sync60" />
+          </a>
+          <a href="https://google.com">
+          <Tree content="Crypto Safety" open = {true}>
+            <Tree content="(refresh a few times)" />
+          </Tree>
+          </a>
         </Tree>
         <Tree content="Experience" open={false}>
-          <Tree content="child 1" />
-          <Tree content="child 2" />
+          <Tree content="Cofounder @ Sync60" />
+          <Tree content="Front End Intern @ Usmosis" />
+          <Tree content="your company could be here :)" />
         </Tree>
       </Tree>
     </ParallaxLayer>

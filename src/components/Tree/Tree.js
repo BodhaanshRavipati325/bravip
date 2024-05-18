@@ -40,18 +40,19 @@ const Contents = ({ children, ...style }) => (
 )
 
 export default class Tree extends React.PureComponent {
-  static defaultProps = { open: false, visible: true, canHide: false }
+  static defaultProps = { open: false, visible: true, canHide: false, link: "" }
   static propTypes = {
     open: PropTypes.bool,
     visible: PropTypes.bool,
     canHide: PropTypes.bool,
     content: PropTypes.node,
     springConfig: PropTypes.func,
+    link: PropTypes.string
   }
 
   constructor(props) {
     super()
-    this.state = { open: props.open, visible: props.visible, immediate: false }
+    this.state = { open: props.open, visible: props.visible, immediate: false, link: props.link}
   }
 
   toggle = () =>
@@ -76,11 +77,12 @@ export default class Tree extends React.PureComponent {
   }
 
   render() {
-    const { open, visible, immediate } = this.state
+    const { open, visible, immediate, link } = this.state
     const { children, content, type, style, canHide, springConfig } = this.props
     const Icon =
       Icons[`${children ? (open ? 'Minus' : 'Plus') : 'Close'}SquareO`]
     return (
+      <a href={link}>
       <div style={{ ...styles.tree, ...style }} className="treeview">
         <Icon
           className="toggle"
@@ -117,6 +119,7 @@ export default class Tree extends React.PureComponent {
           {children}
         </Spring>
       </div>
+      </a>
     )
   }
 }

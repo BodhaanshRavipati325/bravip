@@ -7,7 +7,7 @@ import {
   Frame,
   Content,
   toggle,
-} from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/styles.ts";
+} from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/styles.js";
 import * as Icons from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/images/icons.jsx";
 
 function usePrevious(value) {
@@ -62,9 +62,9 @@ export default function TreeMenu() {
         <Tree name="subtree with children">
           <Tree name="hello" />
           <Tree name="sub-subtree with children">
-            <Tree name="child 1" style={{ color: "#37ceff" }} />
-            <Tree name="child 2" style={{ color: "#37ceff" }} />
-            <Tree name="child 3" style={{ color: "#37ceff" }} />
+            <Tree name="test" style={{ color: "#37ceff" }}/>
+            <Tree name="test" style={{ color: "#37ceff" }} />
+            <Tree name="test" style={{ color: "#37ceff" }} />
             <Tree name="custom content">
               <div
                 style={{

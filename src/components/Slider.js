@@ -1,10 +1,10 @@
 import { animated, useSpring } from "@react-spring/web";
 import React from "react";
-import "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/Navbar.css";
+import "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/Navbar.css";
 
 import { useDrag } from "react-use-gesture";
 
-import styles from "/Users/bodhaanshravipati/Documents/create-react-app/my-app/src/styles/styles.module.css";
+import styles from "/Users/bodhaanshravipati/Documents/GitHub/bravip/src/styles/styles.module.css";
 
 const left = {
   bg: `linear-gradient(120deg, #f093fb 0%, #f5576c 100%)`,
