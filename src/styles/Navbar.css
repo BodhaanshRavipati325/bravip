@@ -73,14 +73,14 @@ h2 {
   position: absolute;
   padding-left: 20vw;
   font-size: 8vw;
-  margin-top: 10vh;
+  margin-top: 4vh;
 }
 
 #point-right {
   position: absolute;
   margin-left: -5.75vw;
   font-size: 8vw;
-  margin-top: 10vh;
+  margin-top: 4vh;
 }
 
 @media only screen and (max-width: 600px) {
