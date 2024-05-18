@@ -30,10 +30,10 @@ const TreeMenu = ({ scrollTo }) => {
       <Tree content="🌊🌊🌊🌊">
         <Tree content="Check out my work!" />
         <Tree content="Projects" open={true}>
-          <a href="https://sync60.vercel.app/">
+          <a href="https://sync60.vercel.app/" target="_blank">
           <Tree content="Sync60" />
           </a>
-          <a href="https://crypto-safety-b8e21.web.app/">
+          <a href="https://crypto-safety-b8e21.web.app/" target="_blank">
           <Tree content="Crypto Safety" open = {true}>
             <Tree content="(refresh a few times)" />
           </Tree>
